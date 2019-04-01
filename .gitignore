@@ -45,6 +45,8 @@
 # Kernel Module Compile Results
 *.mod*
 *.cmd
+out/*
+*dblite*
 .tmp_versions/
 modules.order
 Module.symvers

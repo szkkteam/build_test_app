@@ -1,0 +1,34 @@
+Import('*')
+"""
+SconsMinimumRequiredVersion("x.x.x")
+
+FindLibrary("module::lib", REQUIRED)
+FindLibrary("module::lib", OPTIONAL)
+
+Set("DENIFE_NAME_WHICH_WILL_PRESENT_DURING_BUILD", "define_value")
+"""
+lib_name = "driver2"
+module_name = "driver2"
+module_version = "0.1"
+
+public_headers = \
+[
+	"include/common/driver2.h",
+	"include/common/common.h",
+]
+
+sources = \
+[
+	"src/driver2",
+	"src/driver2_1",
+]
+
+CreateDefaultTargetLib(
+	name=lib_name,
+	version=module_version,
+	sources=sources,
+	headers=public_headers)
+"""
+
+CreateDefaultTargetLib('driver_ll', 'driver.c')
+"""
