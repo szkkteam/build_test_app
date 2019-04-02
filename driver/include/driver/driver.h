@@ -1,1 +1,2 @@
- void Print(const char * c);
+void Print(const char * c);
+
