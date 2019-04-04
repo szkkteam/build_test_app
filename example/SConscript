@@ -1,0 +1,22 @@
+Import('*')
+"""
+SconsMinimumRequiredVersion("x.x.x")
+
+FindLibrary("module::lib", 'REQUIRED')
+FindLibrary("module::lib", 'OPTIONAL')
+
+Set("DENIFE_NAME_WHICH_WILL_PRESENT_DURING_BUILD", "define_value")
+"""
+prog_name = "example"
+prog_version = "0.1"
+
+sources = \
+[
+	"main.c"
+]
+
+CreateTargetExecutable(
+    target="test",
+	name=prog_name,
+	version=prog_version,
+	sources=sources)
