@@ -5,6 +5,6 @@
 from builder import ProjectBuilder
 from enviroment import QEnvironment
 
-env = QEnvironment("config.yaml")
+env = QEnvironment("config.json")
 cc = ProjectBuilder(env)
 cc.Build()
