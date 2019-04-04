@@ -2,7 +2,9 @@
 # The main build script
 #
 ##
-from builder import *
+from builder import ProjectBuilder
+from enviroment import QEnvironment
 
-cc = Builder()
+env = QEnvironment("config.yaml")
+cc = ProjectBuilder(env)
 cc.Build()

@@ -12,7 +12,7 @@ module_version = "0.1"
 
 public_headers = \
 [
-	"include/driver/driver.h"
+	"include/driver/driver.h",
 ]
 
 sources = \
